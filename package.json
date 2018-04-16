@@ -1823,7 +1823,7 @@
   },
   "scripts": {
     "fail": "foo",
-    "succeed": "node ./node_modules/foo/cli.js "
+    "succeed": "node ./node_modules/foo/cli.js ",
 	"test": "mocha"
   },
   "test_settings": {

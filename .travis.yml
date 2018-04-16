@@ -23,4 +23,4 @@ before_install: true
 
 
 script: ./bin/mocha	  
-bash ./deploy.sh
+#bash ./deploy.sh
