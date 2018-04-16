@@ -9,4 +9,4 @@ cache:
     - node_modules
 
 script:
-   "test": "mocha"
+   "test": "make test"
