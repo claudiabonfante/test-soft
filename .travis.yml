@@ -18,8 +18,8 @@ deploy:
   on:
     tags: true
 
-before_install: true
-      install: npm install --production
+#before_install: true
+ #     install: npm install --production
 
 
 script: ./bin/mocha	  
