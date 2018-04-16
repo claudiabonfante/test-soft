@@ -9,9 +9,9 @@ var fs = require('fs');
 describe('Test SoftBox', function() {
     driver
     chromedriver.start();
-    it('Cadastro e Usuário e Validação Cadastro',function(res){        
-        http.get('http://demo.redmine.org/', function(){
-            res
+    it('Cadastro e Usuário e Validação Cadastro',function(){    
+		    http.get('http://demo.redmine.org/', function(res){
+			res
             .click('a[href="/account/register"]')
             .setValue('user[login]', 'teste')
             .setValue('user[password]', '123456')
@@ -26,8 +26,8 @@ describe('Test SoftBox', function() {
         })
     })
         
-    it('Login e Validação de Login', function(res){
-        http.get('http://demo.redmine.org/', function(){
+    it('Login e Validação de Login', function(){
+        http.get('http://demo.redmine.org/', function(res){
             res
             .click('a[href="/login"]')
             .waitForElementVisible('button[name=login]', 5000)
@@ -39,7 +39,7 @@ describe('Test SoftBox', function() {
 	    })
     })
 
-    it('Criando Novo Projeto e Validação da Criação', function(res){
+    it('Criando Novo Projeto e Validação da Criação', function(){
         http.get('http://demo.redmine.org/', function(res){
             res
             .click('a[href="/projects"]')
@@ -63,8 +63,8 @@ describe('Test SoftBox', function() {
        })
     })
 
-    it('Criando 30 tarefas com arquivo JSON', function(res){
-        var dataJson = fs.readFileSync('./DadosTarefas.json', 'utf-8');
+    it('Criando 30 tarefas com arquivo JSON', function(){
+        var dataJson = fs.readFileSync('../DadosTarefas.json', 'utf-8');
         var dados = JSON.parse(dataJson);
         http.get('http://demo.redmine.org/projects/projeto-teste-softbox/settings', function(res){
             res
@@ -83,7 +83,7 @@ describe('Test SoftBox', function() {
     })
     
     it('Realizar Paginação e Comparar com o Arquivo JSON', function(){       
-        var dataJson = fs.readFileSync('./ValidacaoTarefas.json', 'utf-8');
+        var dataJson = fs.readFileSync('../ValidacaoTarefas.json', 'utf-8');
         var dados = JSON.parse(dataJson); 
         http.get('http://demo.redmine.org/projects/projeto-teste-softbox/issues', function(res){
             res    

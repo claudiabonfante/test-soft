@@ -1757,6 +1757,7 @@
     "he": "1.1.1",
     "minimatch": "3.0.4",
     "mkdirp": "0.5.1",
+    "selenium-webdriver": "^4.0.0-alpha.1",
     "supports-color": "4.4.0"
   },
   "deprecated": false,
@@ -1821,8 +1822,8 @@
     "url": "git+https://github.com/mochajs/mocha.git"
   },
   "scripts": {
-   " fail " : " foo " ,
-   " succeed " : " nó ./node_modules/foo/cli.js " 
+    " fail ": " foo ",
+    " succeed ": " nó ./node_modules/foo/cli.js "
   },
   "test_settings": {
     "default": {
@@ -1842,4 +1843,3 @@
   },
   "version": "5.1.0"
 }
-  
