@@ -1821,7 +1821,8 @@
     "url": "git+https://github.com/mochajs/mocha.git"
   },
   "scripts": {
-    "test": "mocha"
+   " fail " : " foo " ,
+   " succeed " : " nó ./node_modules/foo/cli.js " 
   },
   "test_settings": {
     "default": {
@@ -1841,3 +1842,4 @@
   },
   "version": "5.1.0"
 }
+  
