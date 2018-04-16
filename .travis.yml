@@ -10,5 +10,4 @@ cache:
     - node_modules
 
 script:
-  - nightwatch test #caso você tenha algum teste para ser rodado
-  - bash ./deploy.sh
+  - npm test #caso você tenha algum teste para ser rodado
