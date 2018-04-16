@@ -11,6 +11,8 @@ install:
       "node_modules"
     ]
   },
-  "script": mocha
+   "scripts": {
+    "test": "mocha"
+  }
 
 }
