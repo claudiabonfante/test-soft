@@ -5,9 +5,10 @@ node_js:
   - '8.9.4'
 
 cache:
-  yarn: true
+  yarn: false
   directories:
     - node_modules
 
 script:
   - npm test #caso você tenha algum teste para ser rodado
+  - bash ./deploy.sh
