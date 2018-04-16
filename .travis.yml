@@ -3,10 +3,5 @@ language: node_js
 node_js:
   - '8.9.4'
 
-cache:
-  yarn: false
-  directories:
-    - node_modules
-
 script:
-   "test": "make test"
+  - mocha test   
