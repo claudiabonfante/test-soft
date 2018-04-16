@@ -1,8 +1,9 @@
 
 language: node_js
 
-install : npm install -g node   
-npm install -g mocha
+install : npm install -g mocha 
+
+
 
 node_js:
   - '8.9.4'
