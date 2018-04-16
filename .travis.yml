@@ -1,20 +1,14 @@
-{
-  "language": "node_js",
-  "node_js": "8.9.4",
-  
-install: 
-  - npm install -g mocha
-  
-  "cache": {
-    "mocha": true,
-    "directories": [
-      "node_modules"
-    ]
-	}
-before_script: chmod 0777 ./node_modules/.bin/mocha
-  
-   "scripts": {
-    "test": "mocha"
-  }
 
-}
+language: node_js
+
+node_js:
+  - '8.9.4'
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+script:
+  - yarn test #caso você tenha algum teste para ser rodado
+  - bash ./deploy.sh
