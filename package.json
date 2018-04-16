@@ -1821,7 +1821,7 @@
     "url": "git+https://github.com/mochajs/mocha.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test"
   },
   "test_settings": {
     "default": {
