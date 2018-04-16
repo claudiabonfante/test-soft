@@ -1,10 +1,14 @@
+var webdriver = require('selenium-webdriver');
+var chromedriver = require('chromedriver');
+var driver = new webdriver.Builder()
 var assert = require('assert');
 var http = require('http');
 var fs = require('fs'); 
 
 
 describe('Test SoftBox', function() {
-
+    driver
+    chromedriver.start();
     it('Cadastro e Usuário e Validação Cadastro',function(res){        
         http.get('http://demo.redmine.org/', function(){
             res
