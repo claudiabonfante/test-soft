@@ -8,6 +8,6 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha App.js"
   }
 }
