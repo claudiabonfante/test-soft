@@ -20,7 +20,7 @@ deploy:
 
 before_install: true
       install: npm install --production
-      # `--opts /dev/null` means "ignore test/mocha.opts"
+
 
 script: ./bin/mocha
 	  
