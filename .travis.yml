@@ -24,21 +24,16 @@
 
 # script: ./bin/mocha	  
 # #bash ./deploy.sh
-
 language: node_js
- 
- install : npm install -g mocha 
- 
- 
- 
- node_js:
-   - '8.9.4'
- 
- cache:
-   yarn: false
-   directories:
-     - node_modules
- 
- script:
-  - mocha test #caso você tenha algum teste para ser rodado
-   - bash ./deploy.sh 
+
+node_js:
+  - '8.9.4'
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+script:
+  - yarn test #caso você tenha algum teste para ser rodado
+  - bash ./deploy.sh; 
