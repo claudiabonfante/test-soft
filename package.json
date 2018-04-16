@@ -1822,8 +1822,9 @@
     "url": "git+https://github.com/mochajs/mocha.git"
   },
   "scripts": {
-    " fail ": " foo ",
-    " succeed ": " nó ./node_modules/foo/cli.js "
+    "fail": "foo",
+    "succeed": "node ./node_modules/foo/cli.js "
+	"test": "mocha"
   },
   "test_settings": {
     "default": {
