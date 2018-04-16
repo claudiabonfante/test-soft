@@ -2,9 +2,5 @@ language: node_js
 node_js:
   - "stable"
   
-
-install: 
-  - npm install -g mocha
- 
  script:
   - mocha src/App.js
