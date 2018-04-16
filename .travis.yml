@@ -2,17 +2,5 @@
   "language": "node_js",
   "node_js": "8.9.4",
   
-install: 
-  - npm install -g mocha
-  
-  "cache": {
-    "mocha": true,
-    "directories": [
-      "node_modules"
-    ]
-  },
-   "scripts": {
-    "test": "mocha"
-  }
 
 }
