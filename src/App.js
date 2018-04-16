@@ -1,7 +1,3 @@
-//var webdriver = require('selenium-webdriver');
-//var chromedriver = require('chromedriver');
-//var driver = new webdriver.Builder()
-  
 var assert = require('assert');
 var http = require('http');
 var fs = require('fs'); 
