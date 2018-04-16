@@ -96,7 +96,7 @@ describe('Test SoftBox', function() {
         chromedriver.stop();  
     }) 
 
-    })
+  
 });
 
 //export default App;
