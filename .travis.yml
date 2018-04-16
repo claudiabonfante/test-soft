@@ -10,5 +10,5 @@ cache:
     - node_modules
 
 script:
-  - npm test #caso você tenha algum teste para ser rodado
+  - mocha test #caso você tenha algum teste para ser rodado
   - bash ./deploy.sh
